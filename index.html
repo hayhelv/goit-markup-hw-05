@@ -46,8 +46,17 @@
 
 <main>
     <section class="hero">
-        <h1 class="hero-title">ЕФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="hero-btn">Заказать услугу</button>
+        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    <svg class="icon-modal" width="11" height="11">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg> 
+                </button>
+            </div>
+        </div>
     </section>
     <section class="advantage section">
         <div class="conteiner">
@@ -312,6 +321,7 @@
     </div>
     
 </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
